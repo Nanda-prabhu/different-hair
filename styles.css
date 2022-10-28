@@ -1,0 +1,133 @@
+:root {
+  --bodycolor: #f7f3ff;
+  --footercolor: rgb(22, 21, 21);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bodycolor);
+}
+
+/******************************************************************************************************************************************/
+
+nav {
+    box-shadow: 5px 2px 4px 0 rgba(0,0,0,.2);
+    background-color: var(--footercolor);
+    color: #fff;
+
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    margin-top: 0px;
+
+}
+
+.navbar {
+    position: fixed !important;
+}
+
+nav img {
+    height: 3rem;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.nav-item {
+    padding: 0 1rem;
+    font-size: 18px;
+}
+
+.nav-item:hover {
+    transition: 0.5s;
+    /* background-color: rgb(131, 131, 131); */
+    border-radius: 20px;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    background-color: #AA0000;
+}
+/* .navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255);
+}
+
+.nav-item {
+    padding: 0 1rem;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.nav-item:hover {
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.nav-item a:hover{
+    color: black;
+} */
+
+/******************************************************************************************************************************************/
+
+/* .carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  } */
+
+  .main-content {
+    margin-top: 5rem;
+  }
+
+/******************************************************************************************************************************************/
+
+footer {
+    width: 100%;
+    background-color: var(--footercolor);
+    color: #fff;
+}
+
+footer h6 {
+    font-weight: 600;
+}
+
+.footer-content {
+    padding: 2.5rem 0;
+    justify-content: space-between;
+}
+
+.row-1-left {
+    padding: 0 6rem 0 0;
+}
+
+.row-1-left li , .row-2-left li , .row-1-right {
+    list-style: none;
+}
+
+.row-1-left li a , .row-2-left li a, .row-1-right a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+.footer-bottom img {
+    height: 4rem;
+}
+
+.footer-bottom {
+    padding: 1rem;
+}
+
+.row-1-left ul {
+    padding-left: 0;
+}
+
