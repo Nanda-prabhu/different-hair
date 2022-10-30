@@ -2,10 +2,15 @@
 
 :root {
   /* --bodycolor: #f7f3ff; */
-  --bodycolor: #d9d9d9;
   /* --footercolor: rgb(22, 21, 21); */
   /* --footercolor: rgb(56, 48, 48); */
-  --footercolor: #252525;
+  /* --footercolor: #252525; */
+  --footercolor: #424874;
+  /* --bodycolor: #d9d9d9; */
+  --bodycolor: #F4F4F2;
+    
+  /* --primary-bg1:; */
+  --color: #fff;
 
 }
 
@@ -25,12 +30,16 @@ body {
     padding: 10rem ;
 }
 
+#our-story {
+    padding: 10rem;
+}
+
 /******************************************************************************************************************************************/
 
 nav {
     box-shadow: 5px 2px 4px 0 rgba(0,0,0,.2);
     background-color: var(--footercolor);
-    color: #fff;
+    color: var(--color);
 
     z-index: 999;
     position: fixed;
@@ -39,7 +48,11 @@ nav {
     /* height: 100px; */
     top: 0px;
     margin-top: 0px;
+    z-index: 1000;
+}
 
+nav h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .navbar {
@@ -50,6 +63,7 @@ nav img {
     height: 3rem;
     background-color: #fff;
     border-radius: 5px;
+    
 }
 
 .nav-item {
@@ -101,12 +115,43 @@ nav img {
   .main-content {
     margin-top: 5rem;
   }
+
+/******************************************************************************************************************************************/
+
+.hero {
+    padding-top: 2.2rem;
+}
+
+.hero img {
+   background-size: cover;
+   /* height: 500px; */
+   /* height: 100%; */
+   width: 100%; /* You must set a specified height */
+   background-position: center; /* Center the image */
+}
+
+/* .hero-sec::before {
+    z-index: 100;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #010718 ;
+    opacity: 0.4;
+} */
+
+
 /******************************************************************************************************************************************/
 .about-us {
     /* background-color: #AA0000; */
     /* margin-top: 5rem; */
     display: flex;
     justify-content: space-evenly;
+    /* background-color: rgb(177, 72, 72); */
+    height: 75vh;
+    /* height: auto; */
 }
 
 .about-left {
@@ -129,6 +174,8 @@ nav img {
 .our-story {
     display: flex;
     justify-content: space-evenly;
+    /* background-color: #AA0000; */
+    height: 75vh;
 }
 
 .story-left {
@@ -144,8 +191,48 @@ nav img {
 .story-right {
     width: 40vw;
     padding: 10px;
-
+    /* text-align: center; */
 }
+
+/* .our-story {
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: aqua; */
+    /* height: 100vh; */
+    /* width: 100vw; */
+/* } */
+
+/* .story-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.story-left img {
+    height: 50vh;
+    border-radius: 10px;
+}
+
+.story-right {
+    width: 40vw;
+    padding: 10px;
+
+} */
+
+/* .story-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.story-left img {
+    height: 50vh;
+    border-radius: 10px;
+}
+
+.story-right {
+    width: 40vw;
+    padding: 10px;
+
+} */
 /******************************************************************************************************************************************/
 
 
@@ -275,7 +362,7 @@ ul {
 /* MEDIA QUERY */
 
 @media (max-width: 576px) {
-    .about-us {
+    /* .about-us {
         display: flex;
         flex-direction: column;
     }
@@ -294,7 +381,44 @@ ul {
     }
     .story-right {
         width: 100vw;
+    } */
+    /* .about-left {
+        width: 100vw;
+        padding: 0 !important;
+    } */
+    .hero {
+        padding-top: 0;
+        margin-top: 50px;
     }
+    #about-us, #our-story{
+        padding: 0 10px;
+        margin: 20px 0;
+    }
+    .about-us {
+        flex-direction: column;
+        justify-content: flex-start;
+        height: auto;
+    }
+    .about-left {
+        width: 100%;
+    }
+    .about-right img {
+        width: 95vw;
+    }
+
+    .our-story {
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        height: auto;
+    }
+    .story-left img {
+        width: 95vw;
+    }
+    .story-right {
+        width: 100%;
+    }
+
+
     .footer-content .socials, .footer-content .location, .footer-content .mapouter {
         width: 90%;
         /* border: 1px solid wheat; */
