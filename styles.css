@@ -12,14 +12,19 @@
   /* --bodycolor: #F4F4F2; */
   /* --primary-bg1:; */
   /* --color: #fff; */
+
+  /* --OFF-WHITE: #f0ebd8; */
   
-  /* --BG-1: #F4F4F2; */
-  --BG-1: #F0EBD8;
-  /* --BG-2: #424874; */
-  /* --BG-2: #1D2D44; */
-  --BG-2: #0b0b0b;
-  --TEXT-1: #ffffff;
-  --TEXT2: #333333;
+
+  /* --OFF-WHITE: #F4F4F2; */
+  --WHITE: #ffffff;
+  --BLACK: #000000;
+  --OFF-WHITE: #f5f3ea;
+
+  /* --OFF-BLACK: #424874; */
+  /* --OFF-BLACK: #1D2D44; */
+  --OFF-BLACK: #0b0b0b;
+  --GRAY: #333333;
 }
 
 * {
@@ -29,7 +34,7 @@
 }
 
 body {
-    background-color: var(--BG-1) !important;
+    background-color: var(--OFF-WHITE) !important;
     /* font-family: 'Inter', sans-serif; */
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
@@ -40,8 +45,8 @@ body {
 /* NAV START */
 nav {
     /* box-shadow: 5px 2px 4px 0 rgba(0,0,0,.2); */
-    background-color: var(--BG-2);
-    color: var(--TEXT-1);
+    background-color: var(--OFF-BLACK);
+    color: var(--OFF-WHITE);
     z-index: 999;
     position: fixed;
     width: 100%;
@@ -85,6 +90,20 @@ nav h1 {
 /******************************************************************************************************************************************/
 
 /* HERO START */
+.parallax {
+    /* The image used */
+    background-image: url("static/hero-img2.jpg");
+  
+    /* Set a specific height */
+    min-height: 100vh;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
 .hero {
     padding-top: 2.2rem;
 }
@@ -136,6 +155,19 @@ nav h1 {
     height: 50vh;
 }
 /* ABOUT US END */
+
+.quote {
+    background-color: #383838;
+    /* background-color: var(--OFF-BLACK); */
+    color: var(--OFF-WHITE);
+    padding: 5% 10%;
+}
+.quote h1 {
+    font-family: serif;
+}
+/* .quote h3 {
+    font-family: serif;
+} */
 
 /******************************************************************************************************************************************/
 
@@ -216,6 +248,10 @@ nav h1 {
     padding-top: 5rem;
 }
 
+.careers h5 {
+    text-align: center;
+}
+
 .careers-content {
     display: flex;
     justify-content: space-evenly;
@@ -236,13 +272,21 @@ nav h1 {
 /******************************************************************************************************************************************/
 
 .svg {
-    margin-top: 5rem;
-    background-color: var(--TEXT-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 5rem; */
+    padding: 1% 0 10% 0;
+    /* border: 1px solid black; */
+    /* background-color: var(--TEXT-1); */
 }
 
-.svg img {
-    width: 100%;
-    height: 50vh;
+.svg-line {
+    width: 90%;
+    /* height: 50vh; */
+}
+.svg-s {
+    display: none;
 }
 
 /******************************************************************************************************************************************/
@@ -250,11 +294,17 @@ nav h1 {
 /* FOOTER START */
 .footer-content {
     width: 100%;
-    background-color: var(--BG-2);
-    color: var(--TEXT-1);
+    background-color: var(--OFF-BLACK);
+    color: var(--OFF-WHITE);
     display: flex;
     justify-content: space-around;
     padding: 4rem 0;
+}
+.footer-content h3::selection,
+.footer-content p::selection,
+.footer-content li a::selection {
+    background: var(--OFF-WHITE);
+    color: var(--GRAY);
 }
 
 .footer-content .socials, .footer-content .location {
@@ -288,7 +338,7 @@ ul {
 .socials ul li a {
     /* text-decoration: underline; */
     text-decoration: none;
-    color: var(--TEXT-1);
+    color: var(--OFF-WHITE);
     opacity: 0.7;
 }
 
@@ -315,6 +365,12 @@ ul {
 /******************************************************************************************************************************************/
 
 /* MEDIA QUERY */
+
+@media (max-width: 1280px) {
+    .card {
+        width: 20rem !important;
+    } 
+}
 
 @media (max-width: 576px) {
    
@@ -366,6 +422,14 @@ ul {
     }
     .story-right {
         width: 100%;
+    }
+
+    .svg-line {
+        display: none;
+    }
+    .svg-s {
+        display: block;
+        width: 90%;
     }
 
     /* PRODUCTS */
