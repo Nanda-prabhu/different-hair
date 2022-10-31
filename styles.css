@@ -175,6 +175,10 @@ nav h1 {
     flex-direction: row;
 } */
 
+/* #products {
+    padding-top: 3rem;  
+} */
+
 .card {
     padding: 0 20px 20px;
     margin: 2rem 0;
@@ -204,6 +208,41 @@ nav h1 {
     justify-content: center;
     align-items: center;
     margin: auto;
+}
+
+/******************************************************************************************************************************************/
+
+#careers {
+    padding-top: 5rem;
+}
+
+.careers-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* #careers h2 {
+    text-align: center !important;
+} */
+
+.careers-left p, .careers-right p {
+    border: 1px solid rgb(25, 25, 141);
+    background-color: #e0e2ff;
+    padding: 8px;
+    border-radius: 4px;
+    /* width: fit-content; */
+}
+
+/******************************************************************************************************************************************/
+
+.svg {
+    margin-top: 5rem;
+    background-color: var(--TEXT-1);
+}
+
+.svg img {
+    width: 100%;
+    height: 50vh;
 }
 
 /******************************************************************************************************************************************/
@@ -340,6 +379,26 @@ ul {
         margin: 2rem 0;
         width: 20rem !important;
     } 
+
+    /* CAREERS */
+    .careers-content {
+        flex-direction: column;
+    }
+
+    .careers-right {
+        padding-top: 3rem;
+    }
+
+    .careers-left, .careers-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .careers-left p, .careers-right p {
+        width: 75%;
+    }
 
     /* FOOTER */
     .footer-content .socials, .footer-content .location, .footer-content .mapouter {
