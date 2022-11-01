@@ -213,6 +213,10 @@ nav h1 {
     flex-direction: column;
     justify-content: center;
 }
+
+.story-right h1, .about-left h1 {
+    padding-bottom: 2rem;
+}
 /* OUR STORY END */
 
 /******************************************************************************************************************************************/
@@ -243,7 +247,7 @@ nav h1 {
 } */
 
 #products {
-    margin-top: 5rem;   
+    padding-top: 5rem;   
 }
 
 .card {
@@ -379,6 +383,23 @@ nav h1 {
     color: var(--GRAY);
 }
 
+.footer-content li a {
+    /* background-color: yellow; */
+    transition: 0.1s;
+}
+.footer-instagram:hover {
+    color: #db4378;
+}
+.footer-facebook:hover {
+    color: #4267B2;
+}
+.footer-youtube:hover {
+    color: #FF0000;
+}
+.footer-pinterest:hover {
+    color: #E60023;
+}
+
 .footer-content .socials, .footer-content .location {
     width: 20%;
     /* border: 1px solid wheat; */
@@ -484,6 +505,11 @@ ul {
         width: 65vw;
         height: auto;
     }
+
+    .story-right h1, .about-left h1 {
+        padding-bottom: 1rem;
+    }
+
     /* ABOUT US END */
     
     /* OUR STORY START */
