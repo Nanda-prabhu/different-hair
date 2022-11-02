@@ -174,9 +174,10 @@ nav h1 {
 .quote {
     /* background-color: #383838; */
     /* background-color: #f89595; */
-    background-color: #f89595;
+    /* background-color: #f89595; */
     /* background-color: #ff7a7a; */
     /* background-color: var(--OFF-BLACK); */
+    background-color: #262626;
     color: var(--OFF-WHITE);
     padding: 5% 10%;
 }
