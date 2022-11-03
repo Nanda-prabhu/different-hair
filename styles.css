@@ -70,6 +70,24 @@ nav h1 {
     font-size: 18px;
 }
 
+.nav-container h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* font-size: 39px; */
+}
+
+.nav-container a{
+    text-decoration: none;
+}
+
+.sp1 {
+    color: #e69138;
+}
+
+.sp2 {
+    /* color: #666666; */
+    color: #bebebe;
+}
+
 /* .nav-item:hover {
     transition: 0.5s;
     border-radius: 20px;
@@ -177,13 +195,21 @@ nav h1 {
     /* background-color: #f89595; */
     /* background-color: #ff7a7a; */
     /* background-color: var(--OFF-BLACK); */
-    background-color: #262626;
+    /* background-color: #262626; */
+    background-color: #4d4d4d;
     color: var(--OFF-WHITE);
-    padding: 5% 10%;
+    /* padding: 3% 10%; */
+    padding: 2rem;
 }
 .quote h1 {
     font-family: serif;
 }
+
+/* .quote h3 {
+    text-align: right;
+    padding-right: 5rem;
+} */
+
 /* .quote h3 {
     font-family: serif;
 } */
@@ -440,6 +466,11 @@ ul {
     opacity: 1;
 }
 
+.location h3 {
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+}
+
 .location p{
     opacity: 0.7; 
     line-height: 1rem;  
@@ -477,7 +508,9 @@ ul {
     /* NAV START */
     .navbar-dark .navbar-toggler {
         margin-right: 20px;
+        color: #000000 !important;
       }
+
    
     /* .navbar {
         padding-top: 1.8rem !important;
@@ -511,6 +544,14 @@ ul {
         padding-bottom: 1rem;
     }
 
+    .quote {
+        margin-top: 2rem;
+        padding: 3% 10%;
+    }
+    .quote h1 {
+        font-size: 20px;
+    }
+
     /* ABOUT US END */
     
     /* OUR STORY START */
@@ -537,6 +578,7 @@ ul {
     .svg-s {
         display: block;
         width: 90%;
+        padding: 2rem 0;
     }
     /* TIMELINE END */
 
@@ -546,10 +588,14 @@ ul {
     }
 
     .carousel {
-        min-height: 250px;
+        min-height: 230px;
     }
 
     /* PRODUCTS START */
+
+    #products {
+        padding-top: 3.2rem !important;
+    }
 
     /* .wrapper {
         padding-left: 2rem;
